@@ -32,9 +32,14 @@ function makeNegativeMultiplication(num) {
   return num > 0 ? num * (-1) : num;
 }
 
+// Approach 4: Math.abs function
+function makeNegativeMathAbs(num) {
+    return -Math.abs(num);
+}
 
 
 // Test outputs
 console.log("1)If-Else:", makeNegativeIfElse(1), makeNegativeIfElse(-5), makeNegativeIfElse(0), makeNegativeIfElse(0.12));
 console.log("2)Ternary:", makeNegativeTernary(1), makeNegativeTernary(-5), makeNegativeTernary(0), makeNegativeTernary(0.12));
 console.log("3)Multiplication:", makeNegativeMultiplication(1), makeNegativeMultiplication(-5), makeNegativeMultiplication(0), makeNegativeMultiplication(0.12));
+console.log("4)Math.abs:", makeNegativeMathAbs(1), makeNegativeMathAbs(-5), makeNegativeMathAbs(0), makeNegativeMathAbs(0.12));
