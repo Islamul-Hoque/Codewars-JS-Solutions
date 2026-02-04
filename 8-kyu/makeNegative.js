@@ -40,6 +40,8 @@ function makeNegativeMathAbs(num) {
 // Approach 5: Arrow function with Math.abs
 const makeNegative = num => -Math.abs(num) 
 
+// Approach 6: Arrow function with ternary operator
+const makeNegativeArrow = num => num > 0 ? -num : num;
 
 // Test outputs
 console.log("1)If-Else:", makeNegativeIfElse(1), makeNegativeIfElse(-5), makeNegativeIfElse(0), makeNegativeIfElse(0.12));
@@ -47,3 +49,4 @@ console.log("2)Ternary:", makeNegativeTernary(1), makeNegativeTernary(-5), makeN
 console.log("3)Multiplication:", makeNegativeMultiplication(1), makeNegativeMultiplication(-5), makeNegativeMultiplication(0), makeNegativeMultiplication(0.12));
 console.log("4)Math.abs:", makeNegativeMathAbs(1), makeNegativeMathAbs(-5), makeNegativeMathAbs(0), makeNegativeMathAbs(0.12));
 console.log("5)Arrow + Math.abs:", makeNegative(1), makeNegative(-5), makeNegative(0), makeNegative(0.12));
+console.log("6)Arrow + Ternary:", makeNegativeArrow(1), makeNegativeArrow(-5), makeNegativeArrow(0), makeNegativeArrow(0.12));
