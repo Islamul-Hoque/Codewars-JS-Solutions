@@ -22,6 +22,11 @@ function makeNegativeIfElse(num) {
     }
 }
 
+// Approach 2: Ternary operator
+function makeNegativeTernary(num) {
+    return num > 0 ? -num : num;
+}
+
 
 
 // Test outputs
