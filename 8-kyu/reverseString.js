@@ -53,7 +53,10 @@ function reverseStringReduceRight(str) {
     return str.split('').reduceRight((after, before) => after += before, '');
 }
 
-
+// Approach 8: Using reduce
+function reverseStringReduce(str) {
+    return [...str].reduce((s, c) => c + s, '');
+}
 
 // Test outputs
 console.log("1) For Loop:", "'html' =>", reverseStringForLoop("html"), ", 'css' =>", reverseStringForLoop("css"));
@@ -64,3 +67,4 @@ console.log("5) Built-in:", "'html' =>", reverseStringBuiltIn("html"), ", 'css' 
 console.log("5a) Built-in + Replace:", "'react' =>", reverseStringBuiltInReplace("react"), ", 'node' =>", reverseStringBuiltInReplace("node"));
 console.log("6) Spread Operator:", "'express' =>", reverseStringSpread("express"), ", 'mongodb' =>", reverseStringSpread("mongodb"));
 console.log("7) ReduceRight:", "'nextjs' =>", reverseStringReduceRight("nextjs"), ", 'html' =>", reverseStringReduceRight("html"));
+console.log("8) Reduce:", "'css' =>", reverseStringReduce("css"), ", 'js' =>", reverseStringReduce("js"));
