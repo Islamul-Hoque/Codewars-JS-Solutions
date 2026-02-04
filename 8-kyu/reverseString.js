@@ -45,6 +45,10 @@ function reverseStringBuiltInReplace(str) {
     return str.split('').reverse().join().replace(/,/g, '');
 }
 
+// Approach 6: Using spread operator
+const reverseStringSpread = s => [...s].reverse().join('');
+
+
 
 // Test outputs
 console.log("1) For Loop:", "'html' =>", reverseStringForLoop("html"), ", 'css' =>", reverseStringForLoop("css"));
@@ -53,3 +57,4 @@ console.log("3) Substring + charAt:", "'node' =>", reverseStringSubstring("node"
 console.log("4) Recursion:", "'mongodb' =>", reverseStringRecursion("mongodb"), ", 'nextjs' =>", reverseStringRecursion("nextjs"));
 console.log("5) Built-in:", "'html' =>", reverseStringBuiltIn("html"), ", 'css' =>", reverseStringBuiltIn("css"));
 console.log("5a) Built-in + Replace:", "'react' =>", reverseStringBuiltInReplace("react"), ", 'node' =>", reverseStringBuiltInReplace("node"));
+console.log("6) Spread Operator:", "'express' =>", reverseStringSpread("express"), ", 'mongodb' =>", reverseStringSpread("mongodb"));
