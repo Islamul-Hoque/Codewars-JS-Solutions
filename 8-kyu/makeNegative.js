@@ -37,9 +37,13 @@ function makeNegativeMathAbs(num) {
     return -Math.abs(num);
 }
 
+// Approach 5: Arrow function with Math.abs
+const makeNegative = num => -Math.abs(num) 
+
 
 // Test outputs
 console.log("1)If-Else:", makeNegativeIfElse(1), makeNegativeIfElse(-5), makeNegativeIfElse(0), makeNegativeIfElse(0.12));
 console.log("2)Ternary:", makeNegativeTernary(1), makeNegativeTernary(-5), makeNegativeTernary(0), makeNegativeTernary(0.12));
 console.log("3)Multiplication:", makeNegativeMultiplication(1), makeNegativeMultiplication(-5), makeNegativeMultiplication(0), makeNegativeMultiplication(0.12));
 console.log("4)Math.abs:", makeNegativeMathAbs(1), makeNegativeMathAbs(-5), makeNegativeMathAbs(0), makeNegativeMathAbs(0.12));
+console.log("5)Arrow + Math.abs:", makeNegative(1), makeNegative(-5), makeNegative(0), makeNegative(0.12));
