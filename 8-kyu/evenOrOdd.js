@@ -25,9 +25,15 @@ function evenOrOddSwitch(number) {
     }
 }
 
+// Approach 4: Math functions
+function evenOrOddMath(number) {
+    return Math.floor(number / 2) === number / 2 ? "Even" : "Odd"; //Math.floor (2 or 2.5) = 2
+}
+
 
 
 // Test outputs
 console.log("If-Else:", evenOrOddIfElse(2), evenOrOddIfElse(3));
 console.log("Ternary:", evenOrOddTernary(2), evenOrOddTernary(3));
 console.log("Switch:", evenOrOddSwitch(2), evenOrOddSwitch(3));
+console.log("Math:", evenOrOddMath(4), evenOrOddMath(5));
