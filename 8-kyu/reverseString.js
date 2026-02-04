@@ -40,6 +40,10 @@ function reverseStringBuiltIn(str) {
     return str.split('').reverse().join('');
 }
 
+// Alternative Approach 5: Using built-in functions (with replace to remove commas)
+function reverseStringBuiltInReplace(str) {
+    return str.split('').reverse().join().replace(/,/g, '');
+}
 
 
 // Test outputs
@@ -48,3 +52,4 @@ console.log("2) For...of Loop:", "'js' =>", reverseStringForOf("js"), ", 'react'
 console.log("3) Substring + charAt:", "'node' =>", reverseStringSubstring("node"), ", 'express' =>", reverseStringSubstring("express"));
 console.log("4) Recursion:", "'mongodb' =>", reverseStringRecursion("mongodb"), ", 'nextjs' =>", reverseStringRecursion("nextjs"));
 console.log("5) Built-in:", "'html' =>", reverseStringBuiltIn("html"), ", 'css' =>", reverseStringBuiltIn("css"));
+console.log("5a) Built-in + Replace:", "'react' =>", reverseStringBuiltInReplace("react"), ", 'node' =>", reverseStringBuiltInReplace("node"));
