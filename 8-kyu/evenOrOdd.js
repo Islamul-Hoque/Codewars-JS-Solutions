@@ -15,8 +15,19 @@ function evenOrOddTernary(number) {
     return number % 2 === 0 ? "Even" : "Odd";
 }
 
+// Approach 3: Switch statement
+function evenOrOddSwitch(number) {
+    switch (number % 2) {
+        case 0:
+            return "Even";
+        default:
+            return "Odd";
+    }
+}
+
 
 
 // Test outputs
 console.log("If-Else:", evenOrOddIfElse(2), evenOrOddIfElse(3));
 console.log("Ternary:", evenOrOddTernary(2), evenOrOddTernary(3));
+console.log("Switch:", evenOrOddSwitch(2), evenOrOddSwitch(3));
