@@ -48,6 +48,11 @@ function reverseStringBuiltInReplace(str) {
 // Approach 6: Using spread operator
 const reverseStringSpread = s => [...s].reverse().join('');
 
+// Approach 7: Using reduceRight
+function reverseStringReduceRight(str) {
+    return str.split('').reduceRight((after, before) => after += before, '');
+}
+
 
 
 // Test outputs
@@ -58,3 +63,4 @@ console.log("4) Recursion:", "'mongodb' =>", reverseStringRecursion("mongodb"), 
 console.log("5) Built-in:", "'html' =>", reverseStringBuiltIn("html"), ", 'css' =>", reverseStringBuiltIn("css"));
 console.log("5a) Built-in + Replace:", "'react' =>", reverseStringBuiltInReplace("react"), ", 'node' =>", reverseStringBuiltInReplace("node"));
 console.log("6) Spread Operator:", "'express' =>", reverseStringSpread("express"), ", 'mongodb' =>", reverseStringSpread("mongodb"));
+console.log("7) ReduceRight:", "'nextjs' =>", reverseStringReduceRight("nextjs"), ", 'html' =>", reverseStringReduceRight("html"));
