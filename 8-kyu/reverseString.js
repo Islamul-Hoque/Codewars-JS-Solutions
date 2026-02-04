@@ -29,9 +29,16 @@ function reverseStringSubstring(str) {
     return str.length > 0 ? reverseStringSubstring(str.substring(1)) + str.charAt(0) : '';
 }
 
+// Approach 4: Recursive function
+function reverseStringRecursion(str) {
+    if (str === '') return '';
+    return reverseStringRecursion(str.substr(1)) + str[0];
+}
+
 
 
 // Test outputs
 console.log("1) For Loop:", "'html' =>", reverseStringForLoop("html"), ", 'css' =>", reverseStringForLoop("css"));
 console.log("2) For...of Loop:", "'js' =>", reverseStringForOf("js"), ", 'react' =>", reverseStringForOf("react"));
 console.log("3) Substring + charAt:", "'node' =>", reverseStringSubstring("node"), ", 'express' =>", reverseStringSubstring("express"));
+console.log("4) Recursion:", "'mongodb' =>", reverseStringRecursion("mongodb"), ", 'nextjs' =>", reverseStringRecursion("nextjs"));
