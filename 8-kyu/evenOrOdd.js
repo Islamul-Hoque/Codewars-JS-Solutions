@@ -10,7 +10,13 @@ function evenOrOddIfElse(number) {
     }
 }
 
+// Approach 2: Ternary operator
+function evenOrOddTernary(number) {
+    return number % 2 === 0 ? "Even" : "Odd";
+}
+
 
 
 // Test outputs
 console.log("If-Else:", evenOrOddIfElse(2), evenOrOddIfElse(3));
+console.log("Ternary:", evenOrOddTernary(2), evenOrOddTernary(3));
