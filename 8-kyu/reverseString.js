@@ -15,7 +15,17 @@ function reverseStringForLoop(str) {
     return newStr;
 }
 
+// Approach 2: Using a for...of loop
+function reverseStringForOf(str) {
+    let n = '';
+    for (let i of str) {
+        n = i + n;
+    }
+    return n;
+}
+
 
 
 // Test outputs
 console.log("1) For Loop:", "'html' =>", reverseStringForLoop("html"), ", 'css' =>", reverseStringForLoop("css"));
+console.log("2) For...of Loop:", "'js' =>", reverseStringForOf("js"), ", 'react' =>", reverseStringForOf("react"));
