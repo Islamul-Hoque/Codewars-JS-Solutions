@@ -24,8 +24,14 @@ function reverseStringForOf(str) {
     return n;
 }
 
+// Approach 3: Using substring and charAt (recursive)
+function reverseStringSubstring(str) {
+    return str.length > 0 ? reverseStringSubstring(str.substring(1)) + str.charAt(0) : '';
+}
+
 
 
 // Test outputs
 console.log("1) For Loop:", "'html' =>", reverseStringForLoop("html"), ", 'css' =>", reverseStringForLoop("css"));
 console.log("2) For...of Loop:", "'js' =>", reverseStringForOf("js"), ", 'react' =>", reverseStringForOf("react"));
+console.log("3) Substring + charAt:", "'node' =>", reverseStringSubstring("node"), ", 'express' =>", reverseStringSubstring("express"));
