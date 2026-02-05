@@ -15,6 +15,13 @@ function numberToStringToMethod(num) {
     return num.toString();
 }
 
+// Approach 2: Using String() function
+function numberToStringStringFunc(num) {
+    return String(num);
+}
+
+
 
 // Test Outputs
 console.log("1) toString():", numberToStringToMethod(123), "| typeof:", typeof numberToStringToMethod(123), "| number:", 123);
+console.log("2) String():", numberToStringStringFunc(999), "| typeof:", typeof numberToStringStringFunc(999), "| number:", 999);
