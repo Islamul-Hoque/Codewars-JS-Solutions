@@ -45,3 +45,19 @@ Each problem is solved using multiple approaches to demonstrate different techni
   5. reduce only (without filter)  
   6. Arrow function + implicit return  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/sumOfPositive.js)
+
+### 5. Convert a Number to a String
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/5265326f5fda8eb1160004c8)
+- **Approaches:**  
+  1. Using `toString()` method  
+  2. Using `String()` function  
+  3. Using template literals  
+  3a. Template literals (arrow function)  
+  4. Concatenation with empty string  
+  4a. Concatenation (arrow function)  
+  4b. Concatenation (ES6 style)  
+  5. Using `JSON.stringify()`  
+  6. Using `new String()` constructor  
+  7. Using `Array.join()` method  
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/numberToString.js)

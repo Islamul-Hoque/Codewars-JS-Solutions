@@ -1,0 +1,20 @@
+// Description:
+// We need a function that can transform a number (integer) into a string.
+
+// What ways of achieving this do you know?
+
+// Examples (input --> output):
+// 123  --> "123"
+// 999  --> "999"
+// -100 --> "-100"
+
+// 🔗 Problem link: https://www.codewars.com/kata/5265326f5fda8eb1160004c8
+
+// Approach 1: Using the toString() method
+function numberToStringToMethod(num) {
+    return num.toString();
+}
+
+
+// Test Outputs
+console.log("1) toString():", numberToStringToMethod(123), "| typeof:", typeof numberToStringToMethod(123), "| number:", 123);
