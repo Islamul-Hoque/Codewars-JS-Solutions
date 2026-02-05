@@ -40,9 +40,15 @@ function positiveSumFilterReduce(arr) {
     return arr.filter(x => x > 0).reduce((sum, num) => sum + num, 0);
 }
 
+// Approach 5: reduce only (without filter)
+function positiveSumReduce(arr) {
+    return arr.reduce((sum, num) => sum + (num > 0 ? num : 0), 0);
+}
+
 
 // Test Outputs
 console.log("1) For Loop:", positiveSumForLoop([1, -4, 7, 12]));        // 20
 console.log("2) For...of Loop:", positiveSumForOf([1, -4, 7, 12]));     // 20
 console.log("3) forEach:", positiveSumForEach([1, -4, 7, 12]));         // 20
 console.log("4) filter+reduce:", positiveSumFilterReduce([1, -4, 7, 12])); // 20
+console.log("5) reduce only:", positiveSumReduce([1, -4, 7, 12]));      // 20
