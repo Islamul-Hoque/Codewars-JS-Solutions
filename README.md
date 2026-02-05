@@ -34,3 +34,14 @@ Each problem is solved using multiple approaches to demonstrate different techni
   8. Reduce → `'css' => 'ssc'`, `'js' => 'sj'`  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/reverseString.js)
 
+### 4. Sum of positive
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/5715eaedb436cf5606000381/javascript)
+- **Approaches:**  
+  1. For Loop  
+  2. For...of Loop  
+  3. forEach Method  
+  4. filter + reduce (Functional style)  
+  5. reduce only (without filter)  
+  6. Arrow function + implicit return  
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/sumOfPositive.js)

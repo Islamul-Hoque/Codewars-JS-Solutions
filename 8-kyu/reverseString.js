@@ -19,14 +19,14 @@ function reverseStringForLoop(str) {
 function reverseStringForOf(str) {
     let n = '';
     for (let i of str) {
-        n = i + n;
+        n = i + n;   // i='a'→ n='a'+'' ='a'
     }
     return n;
 }
 
 // Approach 3: Using substring and charAt (recursive)
 function reverseStringSubstring(str) {
-    return str.length > 0 ? reverseStringSubstring(str.substring(1)) + str.charAt(0) : '';
+    return str.length > 0 ? reverseStringSubstring(str.substring(1)) + str.charAt(0) : '';  //str.substring(1) → "bc" ; str.charAt(0) → 'a'
 }
 
 // Approach 4: Recursive function
@@ -55,7 +55,7 @@ function reverseStringReduceRight(str) {
 
 // Approach 8: Using reduce
 function reverseStringReduce(str) {
-    return [...str].reduce((s, c) => c + s, '');
+    return [...str].reduce((reversed, currentChar) => currentChar + reversed, '');
 }
 
 // Test outputs
