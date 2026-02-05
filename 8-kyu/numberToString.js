@@ -20,8 +20,13 @@ function numberToStringStringFunc(num) {
     return String(num);
 }
 
+// Approach 3: Using template literals
+function numberToStringTemplate(num) {
+    return `${num}`;
+}
 
 
 // Test Outputs
 console.log("1) toString():", numberToStringToMethod(123), "| typeof:", typeof numberToStringToMethod(123), "| number:", 123);
 console.log("2) String():", numberToStringStringFunc(999), "| typeof:", typeof numberToStringStringFunc(999), "| number:", 999);
+console.log("3) Template:", numberToStringTemplate(-100), "| typeof:", typeof numberToStringTemplate(-100), "| number:", -100);
