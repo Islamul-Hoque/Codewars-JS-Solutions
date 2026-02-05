@@ -39,6 +39,11 @@ const numberToStringAltConcat = num => num + '';
 // Alternative Approach 4b: Using concatenation with an empty string (ES6)
 const numberToStringES6Concat = num => '' + num;
 
+// Approach 5: Using JSON.stringify() method
+function numberToStringJSON(num) {
+    return JSON.stringify(num);
+}
+
 
 // Test Outputs
 console.log("1) toString():", numberToStringToMethod(123), "| typeof:", typeof numberToStringToMethod(123), "| number:", 123);
@@ -48,3 +53,4 @@ console.log("3a) Template (arrow):", numberToString(456), "| typeof:", typeof nu
 console.log("4) Concat:", numberToStringConcat(789), "| typeof:", typeof numberToStringConcat(789), "| number:", 789);
 console.log("4a) Concat (arrow):", numberToStringAltConcat(321), "| typeof:", typeof numberToStringAltConcat(321), "| number:", 321);
 console.log("4b) Concat (ES6):", numberToStringES6Concat(-654), "| typeof:", typeof numberToStringES6Concat(-654), "| number:", -654);
+console.log("5) JSON.stringify:", numberToStringJSON(111), "| typeof:", typeof numberToStringJSON(111), "| number:", 111);
