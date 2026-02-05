@@ -26,7 +26,17 @@ function positiveSumForOf(arr) {
     return sum;
 }
 
+// Approach 3: forEach Method
+function positiveSumForEach(arr) {
+    let sum = 0;
+    arr.forEach(num => {
+        if (num > 0) sum += num;
+    });
+    return sum;
+}
+
 
 // Test Outputs
 console.log("1) For Loop:", positiveSumForLoop([1, -4, 7, 12]));        // 20
 console.log("2) For...of Loop:", positiveSumForOf([1, -4, 7, 12]));     // 20
+console.log("3) forEach:", positiveSumForEach([1, -4, 7, 12]));         // 20
