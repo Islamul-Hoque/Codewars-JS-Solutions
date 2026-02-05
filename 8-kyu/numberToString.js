@@ -49,7 +49,10 @@ function numberToStringNewString(num) {
     return new String(num).toString();
 }
 
-
+// Approach 7: Using Array join method
+function numberToStringJoin(num) {
+    return [num].join('');
+}
 
 // Test Outputs
 console.log("1) toString():", numberToStringToMethod(123), "| typeof:", typeof numberToStringToMethod(123), "| number:", 123);
@@ -61,3 +64,4 @@ console.log("4a) Concat (arrow):", numberToStringAltConcat(321), "| typeof:", ty
 console.log("4b) Concat (ES6):", numberToStringES6Concat(-654), "| typeof:", typeof numberToStringES6Concat(-654), "| number:", -654);
 console.log("5) JSON.stringify:", numberToStringJSON(111), "| typeof:", typeof numberToStringJSON(111), "| number:", 111);
 console.log("6) new String:", numberToStringNewString(222), "| typeof:", typeof numberToStringNewString(222), "| number:", 222);
+console.log("7) Array join:", numberToStringJoin(333), "| typeof:", typeof numberToStringJoin(333), "| number:", 333);
