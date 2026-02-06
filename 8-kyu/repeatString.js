@@ -28,6 +28,11 @@ const repeatStringArrow = (n, s) => s.repeat(n);
 // Approach 3: Template Literal + repeat()
 let repeatStr = (n, s) => `${s.repeat(n)}`;
 
+// Approach 4: Array.fill() + join()
+function repeatStringArrayJoin(n, s) {
+    return Array(n).fill(s).join('');
+}
+
 
 
 // Test Outputs
@@ -35,3 +40,4 @@ console.log(repeatStringForLoop(3, "Hi"));        // "HiHiHi"
 console.log(repeatStringBuiltIn(4, "JS"));        // "JSJSJSJS"
 console.log(repeatStringArrow(2, "Go"));          // "GoGo"
 console.log(repeatStr(5, "Hello"));               // "HelloHelloHelloHelloHello"
+console.log(repeatStringArrayJoin(3, "Bye"));     // "ByeByeBye"
