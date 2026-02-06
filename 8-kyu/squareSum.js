@@ -25,8 +25,16 @@ function squareSumForOf(numbers) {
     return sum;
 }
 
+// Approach 3: forEach Method
+function squareSumForEach(numbers) {
+    let sum = 0;
+    numbers.forEach(num => sum += num * num);
+    return sum;
+}
+
 
 
 // Test Outputs
 console.log("For Loop:", squareSumForLoop([1, 2, 2]));        // 9
 console.log("For...of:", squareSumForOf([1, 2, 2]));          // 9
+console.log("forEach:", squareSumForEach([1, 2, 2]));         // 9
