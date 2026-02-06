@@ -16,7 +16,14 @@ function removeCharSlice(str) {
     return str.slice(1, -1);
 }
 
+// Approach 2: Using substring()
+function removeCharSubstring(str) {
+    return str.substring(1, str.length - 1);
+}
+
+
 
 
 // Test Outputs
 console.log("slice:", removeCharSlice("eloquent"));     // "loquen"
+
