@@ -12,9 +12,16 @@ function findSmallestIntSpread(arr) {
     return Math.min(...arr);
 }
 
+// Approach 2: Using reduce()
+function findSmallestIntReduce(arr) {
+    return arr.reduce((min, num) => num < min ? num : min); // min = accumulator(previousValue), num = currentValue(current element being processed)
+}
 
 
 // Test Outputs
 console.log(findSmallestIntSpread([34, 15, 88, 2]));     // 2
 console.log(findSmallestIntSpread([34, -345, -1, 100])); // -345
+
+console.log(findSmallestIntReduce([34, 15, 88, 2]));     // 2
+console.log(findSmallestIntReduce([34, -345, -1, 100])); // -345
 
