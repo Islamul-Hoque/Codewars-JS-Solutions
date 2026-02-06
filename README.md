@@ -107,3 +107,18 @@ Each problem is solved using multiple approaches to demonstrate different techni
   5. Using spread operator + `Array.slice()`  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/removeChar.js)
 
+### 8. String repeat
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/57a0e5c372292dd76d000d7e/javascript)
+- **Approaches:**  
+  1. For Loop   
+  2. Built‑in `repeat()` method  
+  3. Arrow Function + `repeat()`   
+  4. Template Literal + `repeat()` 
+  5. Array.fill() + join() → array utility method 
+  6. Array.from() + join() → array constructor method
+  7. Spread Operator + map() + join() → ES6 spread + array mapping method
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/repeatString.js)
+
+
+
