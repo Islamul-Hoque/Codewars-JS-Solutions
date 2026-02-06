@@ -21,9 +21,16 @@ function removeCharSubstring(str) {
     return str.substring(1, str.length - 1);
 }
 
+// Approach 3: Using substr() (older method)
+function removeCharSubstr(str) {
+    return str.substr(1, str.length - 2);
+}
+
 
 
 
 // Test Outputs
 console.log("slice:", removeCharSlice("eloquent"));     // "loquen"
+console.log("substring:", removeCharSubstring("country")); // "ountr"
+console.log("substr:", removeCharSubstr("person"));     // "erso"
 
