@@ -42,6 +42,8 @@ function squareSumReduce(numbers) {
     return numbers.reduce((sum, num) => sum + num * num, 0);
 }
 
+// Approach 6: Arrow function + reduce (concise)
+const squareSumArrow = numbers => numbers.reduce((sum, num) => sum + num ** 2, 0);
 
 // Test Outputs
 console.log("For Loop:", squareSumForLoop([1, 2, 2]));        // 9
@@ -49,3 +51,4 @@ console.log("For...of:", squareSumForOf([1, 2, 2]));          // 9
 console.log("forEach:", squareSumForEach([1, 2, 2]));         // 9
 console.log("map+reduce:", squareSumMapReduce([1, 2, 2]));    // 9
 console.log("reduce only:", squareSumReduce([1, 2, 2]));      // 9
+console.log("Arrow+reduce:", squareSumArrow([1, 2, 2]));      // 9
