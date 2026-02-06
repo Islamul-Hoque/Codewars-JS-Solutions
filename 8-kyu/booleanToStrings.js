@@ -23,9 +23,13 @@ function boolToWordObjectMap(bool) {
     return result[bool];
 }
 
-
+// Approach 4: Using String conversion
+function boolToWordStringConversion(bool) {
+    return String(bool) === 'true' ? 'Yes' : 'No';
+}
 
 // Test outputs
 console.log("If-Else:", boolToWordIfElse(true), boolToWordIfElse(false));
 console.log("Ternary:", boolToWordTernary(true), boolToWordTernary(false));
 console.log("Object Map:", boolToWordObjectMap(true), boolToWordObjectMap(false));
+console.log("String Conversion:", boolToWordStringConversion(true), boolToWordStringConversion(false));
