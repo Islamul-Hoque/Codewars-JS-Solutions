@@ -22,7 +22,11 @@ function repeatStringBuiltIn(n, s) {
     return s.repeat(n);
 }
 
+// Alternative Approach 2: Arrow Function + repeat() 
+const repeatStringArrow = (n, s) => s.repeat(n);
+
 
 // Test Outputs
 console.log(repeatStringForLoop(3, "Hi"));        // "HiHiHi"
 console.log(repeatStringBuiltIn(4, "JS"));        // "JSJSJSJS"
+console.log(repeatStringArrow(2, "Go"));          // "GoGo"
