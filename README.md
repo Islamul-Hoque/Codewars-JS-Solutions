@@ -83,3 +83,15 @@ Each problem is solved using multiple approaches to demonstrate different techni
   3. Object mapping  
   4. String conversion  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/booleanToStrings.js)
+
+### 6. Square(n) Sum
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/515e271a311df0350d00000f/javascript)
+- **Approaches:**  
+  1. For Loop  
+  2. For...of Loop  
+  3. forEach Method  
+  4. map + reduce (Functional style)  
+  5. reduce only (without map)  
+  6. Arrow function + reduce (concise)  
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/squareSum.js)
