@@ -36,6 +36,8 @@ function repeatStringArrayJoin(n, s) {
 // Approach 5: Array.from() + join() 
 const repeatStringArrayFrom = (n, s) => Array.from({ length: n }, () => s).join('');
 
+// Approach 6: Spread Operator + map() + join() 
+const repeatStringSpread = (n, s) => [...Array(n)].map(() => s).join('');
 
 
 // Test Outputs
@@ -45,3 +47,4 @@ console.log(repeatStringArrow(2, "Go"));          // "GoGo"
 console.log(repeatStr(5, "Hello"));               // "HelloHelloHelloHelloHello"
 console.log(repeatStringArrayJoin(3, "Bye"));     // "ByeByeBye"
 console.log(repeatStringArrayFrom(2, "Yo"));      // "YoYo"
+console.log(repeatStringSpread(6, "I"));          // "IIIIII"
