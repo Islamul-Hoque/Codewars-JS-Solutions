@@ -22,9 +22,9 @@ function removeCharSubstring(str) {
 }
 
 // Approach 3: Using substr() (older method)
-function removeCharSubstr(str) {
-    return str.substr(1, str.length - 2);
-}
+// function removeCharSubstr(str) {
+//     return str.substr(1, str.length - 2);
+// }
 
 // Approach 4: Using split + shift + pop + join
 function removeCharSplit(str) {
@@ -34,10 +34,21 @@ function removeCharSplit(str) {
     return arr.join('');
 }
 
+// Approach 5: Using spread operator + Array.slice()
+function removeCharSpread(str) {
+    return [...str].slice(1, -1).join('');
+}
+
+// Approach 6: Using Regex
+function removeCharRegex(str) {
+    return str.replace(/^.|.$/g, '');
+}
 
 
 // Test Outputs
 console.log("slice:", removeCharSlice("eloquent"));     // "loquen"
 console.log("substring:", removeCharSubstring("country")); // "ountr"
-console.log("substr:", removeCharSubstr("person"));     // "erso"
+// console.log("substr:", removeCharSubstr("person"));     // "erso"
 console.log("split:", removeCharSplit("xyz"));          // "y"
+console.log("spread:", removeCharSpread("hello"));      // "ell"
+console.log("regex:", removeCharRegex("ab"));           // ""
