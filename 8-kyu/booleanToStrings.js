@@ -12,7 +12,13 @@ function boolToWordIfElse(bool) {
     }
 }
 
+// Approach 2: Ternary operator
+function boolToWordTernary(bool) {
+    return bool ? 'Yes' : 'No';
+}
+
 
 
 // Test outputs
 console.log("If-Else:", boolToWordIfElse(true), boolToWordIfElse(false));
+console.log("Ternary:", boolToWordTernary(true), boolToWordTernary(false));
