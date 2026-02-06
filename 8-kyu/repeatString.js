@@ -17,5 +17,12 @@ function repeatStringForLoop(n, s) {
     return result;
 }
 
+// Approach 2: Using repeat() 
+function repeatStringBuiltIn(n, s) {
+    return s.repeat(n);
+}
+
+
 // Test Outputs
 console.log(repeatStringForLoop(3, "Hi"));        // "HiHiHi"
+console.log(repeatStringBuiltIn(4, "JS"));        // "JSJSJSJS"

@@ -84,7 +84,7 @@ Each problem is solved using multiple approaches to demonstrate different techni
   4. String conversion  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/booleanToStrings.js)
 
-### 6. Square(n) Sum
+### 7. Square(n) Sum
 - **Difficulty:** 8 kyu  
 - **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/515e271a311df0350d00000f/javascript)
 - **Approaches:**  
@@ -96,7 +96,7 @@ Each problem is solved using multiple approaches to demonstrate different techni
   6. Arrow function + reduce (concise)  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/squareSum.js)
 
-### 7. Remove First and Last Character
+### 8. Remove First and Last Character
 - **Difficulty:** 8 kyu  
 - **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0/javascript)
 - **Approaches:**  
@@ -107,7 +107,7 @@ Each problem is solved using multiple approaches to demonstrate different techni
   5. Using spread operator + `Array.slice()`  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/removeChar.js)
 
-### 8. String repeat
+### 9. String repeat
 - **Difficulty:** 8 kyu  
 - **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/57a0e5c372292dd76d000d7e/javascript)
 - **Approaches:**  
