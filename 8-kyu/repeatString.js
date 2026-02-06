@@ -33,6 +33,9 @@ function repeatStringArrayJoin(n, s) {
     return Array(n).fill(s).join('');
 }
 
+// Approach 5: Array.from() + join() 
+const repeatStringArrayFrom = (n, s) => Array.from({ length: n }, () => s).join('');
+
 
 
 // Test Outputs
@@ -41,3 +44,4 @@ console.log(repeatStringBuiltIn(4, "JS"));        // "JSJSJSJS"
 console.log(repeatStringArrow(2, "Go"));          // "GoGo"
 console.log(repeatStr(5, "Hello"));               // "HelloHelloHelloHelloHello"
 console.log(repeatStringArrayJoin(3, "Bye"));     // "ByeByeBye"
+console.log(repeatStringArrayFrom(2, "Yo"));      // "YoYo"
