@@ -32,9 +32,13 @@ function squareSumForEach(numbers) {
     return sum;
 }
 
-
+// Approach 4: map + reduce (Functional style)
+function squareSumMapReduce(numbers) {
+    return numbers.map(num => num * num).reduce((sum, num) => sum + num, 0);
+}
 
 // Test Outputs
 console.log("For Loop:", squareSumForLoop([1, 2, 2]));        // 9
 console.log("For...of:", squareSumForOf([1, 2, 2]));          // 9
 console.log("forEach:", squareSumForEach([1, 2, 2]));         // 9
+console.log("map+reduce:", squareSumMapReduce([1, 2, 2]));    // 9
