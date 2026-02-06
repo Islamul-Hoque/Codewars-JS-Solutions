@@ -33,7 +33,16 @@ function findSmallestIntForLoop(arr) {
     return min;
 }
 
-
+// Approach 5: Using For...of Loop
+function findSmallestIntForOf(arr) {
+    let min = arr[0];
+    for (const num of arr) {
+        if (num < min) {
+            min = num;
+        }
+    }
+    return min;
+}
 
 // Test Outputs
 console.log(findSmallestIntSpread([34, 15, 88, 2]));     // 2
@@ -48,3 +57,5 @@ console.log(findSmallestIntSort([34, -345, -1, 100]));   // -345
 console.log(findSmallestIntForLoop([34, 15, 88, 2]));    // 2
 console.log(findSmallestIntForLoop([34, -345, -1, 100]));// -345
 
+console.log(findSmallestIntForOf([34, 15, 88, 2]));     // 2
+console.log(findSmallestIntForOf([34, -345, -1, 100])); // -345
