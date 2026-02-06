@@ -11,7 +11,7 @@
 function squareSumForLoop(numbers) {
     let sum = 0;
     for (let i = 0; i < numbers.length; i++) {
-        sum += numbers[i] ** 2;
+        sum += numbers[i] ** 2;  // ** 2 → Exponentiation operator for squaring; numbers[i] ** 2 is equivalent to Math.pow(numbers[i], 2) or numbers[i] * numbers[i]
     }
     return sum;
 }
@@ -20,7 +20,7 @@ function squareSumForLoop(numbers) {
 function squareSumForOf(numbers) {
     let sum = 0;
     for (const num of numbers) {
-        sum += num * num;
+        sum += num * num; // num * num → Multiplication for squaring
     }
     return sum;
 }

@@ -95,3 +95,15 @@ Each problem is solved using multiple approaches to demonstrate different techni
   5. reduce only (without map)  
   6. Arrow function + reduce (concise)  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/squareSum.js)
+
+### 7. Remove First and Last Character
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0/javascript)
+- **Approaches:**  
+  1. Using `slice()`  
+  2. Using `substring()`  
+  3. Using `substr()` (legacy method)  
+  4. Using `split` + `shift` + `pop` + `join`  
+  5. Using spread operator + `Array.slice()`  
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/removeCharacter.js)
+
