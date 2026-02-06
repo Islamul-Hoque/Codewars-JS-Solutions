@@ -26,6 +26,13 @@ function removeCharSubstr(str) {
     return str.substr(1, str.length - 2);
 }
 
+// Approach 4: Using split + shift + pop + join
+function removeCharSplit(str) {
+    let arr = str.split('');
+    arr.shift();
+    arr.pop();
+    return arr.join('');
+}
 
 
 
@@ -33,4 +40,4 @@ function removeCharSubstr(str) {
 console.log("slice:", removeCharSlice("eloquent"));     // "loquen"
 console.log("substring:", removeCharSubstring("country")); // "ountr"
 console.log("substr:", removeCharSubstr("person"));     // "erso"
-
+console.log("split:", removeCharSplit("xyz"));          // "y"
