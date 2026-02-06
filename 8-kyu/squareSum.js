@@ -16,6 +16,17 @@ function squareSumForLoop(numbers) {
     return sum;
 }
 
+// Approach 2: For...of Loop
+function squareSumForOf(numbers) {
+    let sum = 0;
+    for (const num of numbers) {
+        sum += num * num;
+    }
+    return sum;
+}
+
+
 
 // Test Outputs
 console.log("For Loop:", squareSumForLoop([1, 2, 2]));        // 9
+console.log("For...of:", squareSumForOf([1, 2, 2]));          // 9
