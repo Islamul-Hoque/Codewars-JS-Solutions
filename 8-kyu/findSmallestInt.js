@@ -22,6 +22,18 @@ function findSmallestIntSort(arr) {
     return arr.sort((a, b) => a - b)[0]; // a-b = ascending order(smallest first), b-a = descending order(largest first)
 }
 
+// Approach 4: Using For Loop
+function findSmallestIntForLoop(arr) {
+    let min = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+    }
+    return min;
+}
+
+
 
 // Test Outputs
 console.log(findSmallestIntSpread([34, 15, 88, 2]));     // 2
@@ -32,4 +44,7 @@ console.log(findSmallestIntReduce([34, -345, -1, 100])); // -345
 
 console.log(findSmallestIntSort([34, 15, 88, 2]));       // 2
 console.log(findSmallestIntSort([34, -345, -1, 100]));   // -345
+
+console.log(findSmallestIntForLoop([34, 15, 88, 2]));    // 2
+console.log(findSmallestIntForLoop([34, -345, -1, 100]));// -345
 
