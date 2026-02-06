@@ -120,5 +120,13 @@ Each problem is solved using multiple approaches to demonstrate different techni
   7. Spread Operator + map() + join() → ES6 spread + array mapping method
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/repeatString.js)
 
-
-
+### 10. Find the smallest integer in the array
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/55a2d7ebe362935a210000b2/javascript)
+- **Approaches:**  
+  1. Math.min + Spread Operator  
+  2. Array.prototype.reduce()  
+  3. Array.prototype.sort()  
+  4. For Loop  
+  5. For...of Loop 
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/findSmallestInt.js)
