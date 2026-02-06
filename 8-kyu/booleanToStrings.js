@@ -17,8 +17,15 @@ function boolToWordTernary(bool) {
     return bool ? 'Yes' : 'No';
 }
 
+// Approach 3: Object mapping
+function boolToWordObjectMap(bool) {
+    const result = {true: 'Yes', false: 'No'};
+    return result[bool];
+}
+
 
 
 // Test outputs
 console.log("If-Else:", boolToWordIfElse(true), boolToWordIfElse(false));
 console.log("Ternary:", boolToWordTernary(true), boolToWordTernary(false));
+console.log("Object Map:", boolToWordObjectMap(true), boolToWordObjectMap(false));
