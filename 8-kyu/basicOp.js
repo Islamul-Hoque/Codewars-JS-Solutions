@@ -38,8 +38,13 @@ const basicOpMap = (op, v1, v2) => {
     return ops[op](v1, v2);
 };
 
+// Approach 4: eval() using Template Literals
+const basicOpEval = (op, v1, v2) => eval(`${v1} ${op} ${v2}`);
+
+
 // Test Outputs
 console.log(basicOpIfElse('+', 4, 7));   // 11
 console.log(basicOpSwitch('-', 15, 18)); // -3
 console.log(basicOpMap('*', 5, 5));      // 25
 
+console.log(basicOpEval('/', 49, 7));    // 7
