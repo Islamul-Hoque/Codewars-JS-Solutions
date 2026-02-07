@@ -16,7 +16,17 @@ const basicOpIfElse = (op, v1, v2) => {
     if (op === '/') return v1 / v2;
 };
 
-
+// Approach 2: Switch Statement
+const basicOpSwitch = (op, v1, v2) => {
+    switch (op) {
+        case '+': return v1 + v2;
+        case '-': return v1 - v2;
+        case '*': return v1 * v2;
+        case '/': return v1 / v2;
+        default: return 'Operation must be one of + - * /';
+    }
+};
 
 // Test Outputs
 console.log(basicOpIfElse('+', 4, 7));   // 11
+console.log(basicOpSwitch('-', 15, 18)); // -3
