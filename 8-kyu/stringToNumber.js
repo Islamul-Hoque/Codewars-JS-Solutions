@@ -11,6 +11,10 @@
 // Approach 1: Unary Plus
 const stringToNumberPlus = str => +str
 
+// Approach 2: Number() constructor
+const stringToNumberNumber = str => Number(str)
+
 
 // Test Outputs
 console.log(stringToNumberPlus("1234"));      // 1234
+console.log(stringToNumberNumber("605"));     // 605
