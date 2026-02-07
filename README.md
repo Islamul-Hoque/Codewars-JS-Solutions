@@ -130,3 +130,14 @@ Each problem is solved using multiple approaches to demonstrate different techni
   4. For Loop  
   5. For...of Loop 
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/findSmallestInt.js)
+
+### 11. Remove String Spaces
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/57eae20f5500ad98e50002c5/javascript)
+- **Approaches:**  
+  1. Arrow Function + split() + join()  
+  2. Arrow Function + replace() with regex  
+  3. Using replaceAll()  
+  4. Using filter()  
+  5. Using reduce()  
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/findSmallestInt.js)
