@@ -14,7 +14,11 @@ const stringToNumberPlus = str => +str
 // Approach 2: Number() constructor
 const stringToNumberNumber = str => Number(str)
 
+// Approach 3: parseInt() with radix 10
+const stringToNumberParseInt = str => parseInt(str, 10) // 10 → decimal base
+
 
 // Test Outputs
 console.log(stringToNumberPlus("1234"));      // 1234
 console.log(stringToNumberNumber("605"));     // 605
+console.log(stringToNumberParseInt("1405"));  // 1405
