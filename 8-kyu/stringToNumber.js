@@ -20,9 +20,12 @@ const stringToNumberParseInt = str => parseInt(str, 10) // 10 → decimal base
 // Approach 4: Multiplication by 1
 const stringToNumberMultiply = str => str * 1  // Multiplying by 1 is a common trick to convert a string to a number.
 
+// Approach 5: parseFloat()
+const stringToNumberParseFloat = str => parseFloat(str) // parseFloat() can handle both integers and floating-point numbers.
 
 // Test Outputs
 console.log(stringToNumberPlus("1234"));      // 1234
 console.log(stringToNumberNumber("605"));     // 605
 console.log(stringToNumberParseInt("1405"));  // 1405
 console.log(stringToNumberMultiply("-7"));    // -7
+console.log(stringToNumberParseFloat("42"));  // 42
