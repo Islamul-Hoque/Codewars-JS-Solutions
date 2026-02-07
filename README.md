@@ -140,4 +140,4 @@ Each problem is solved using multiple approaches to demonstrate different techni
   3. Using replaceAll()  
   4. Using filter()  
   5. Using reduce()  
-- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/findSmallestInt.js)
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/removeStringSpaces.js)

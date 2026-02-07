@@ -13,6 +13,11 @@
 // Approach 1: Arrow Function + split + join
 const noSpaceSplitJoin = str => str.split(' ').join('')
 
+// Approach 2: Arrow Function + replace (regex for space only)
+const noSpaceReplaceArrow = x => x.replace(/ /g, "")    //  / / → single space character match, g → global 
+
+
 
 // Test Outputs
 console.log(noSpaceSplitJoin("I S HFAk")) // "ISHFAK"
+console.log(noSpaceReplaceArrow("islamul Hoque 2006 @ gmail . com")) // "islamulhoque2006@gmail.com"
