@@ -19,9 +19,15 @@ const noSpaceReplaceArrow = x => x.replace(/ /g, "")    //  / / → single space
 // Approach 3: Using replaceAll()
 const noSpaceReplaceAll = x => x.replaceAll(' ', '')    //  ' ' → single space character match.
 
+// Approach 4: Using filter()
+function noSpaceFilter(str) {
+    return str.split('').filter(ch => ch !== ' ').join('');
+}
+
 
 
 // Test Outputs
 console.log(noSpaceSplitJoin("I S HFAk")) // "ISHFAK"
 console.log(noSpaceReplaceArrow("islamul Hoque 2006 @ gmail . com")) // "islamulhoque2006@gmail.com"
 console.log(noSpaceReplaceAll("    H   i       ")) // "Hi"
+console.log(noSpaceFilter(" Ban gla de sh       ")) // "Bangladesh"
