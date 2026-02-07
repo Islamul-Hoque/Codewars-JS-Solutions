@@ -141,3 +141,15 @@ Each problem is solved using multiple approaches to demonstrate different techni
   4. Using filter()  
   5. Using reduce()  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/removeStringSpaces.js)
+
+### 12. Convert a String to a Number
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/57eae20f5500ad98e50002c5/javascript)
+- **Approaches:**  
+  1. Unary Plus (`+str`)  
+  2. Number() constructor  
+  3. parseInt() with radix 10  
+  4. Multiplication by 1  
+  5. parseFloat()  
+  6. Math.floor(parseFloat()) 
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/stringToNumber.js)
