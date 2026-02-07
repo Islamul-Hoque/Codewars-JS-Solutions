@@ -27,6 +27,19 @@ const basicOpSwitch = (op, v1, v2) => {
     }
 };
 
+// Approach 3: Object Mapping
+const basicOpMap = (op, v1, v2) => {
+    const ops = {
+        '+': (a, b) => a + b,
+        '-': (a, b) => a - b,
+        '*': (a, b) => a * b,
+        '/': (a, b) => a / b,
+    };
+    return ops[op](v1, v2);
+};
+
 // Test Outputs
 console.log(basicOpIfElse('+', 4, 7));   // 11
 console.log(basicOpSwitch('-', 15, 18)); // -3
+console.log(basicOpMap('*', 5, 5));      // 25
+
