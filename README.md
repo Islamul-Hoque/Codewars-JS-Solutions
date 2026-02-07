@@ -153,3 +153,15 @@ Each problem is solved using multiple approaches to demonstrate different techni
   5. parseFloat()  
   6. Math.floor(parseFloat()) 
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/stringToNumber.js)
+
+### 13. Basic Mathematical Operations
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/57356c55867b9b7a60000bd7/javascript)
+- **Approaches:**  
+  1. If–Else Chain  
+  2. Switch Statement  
+  3. Object Mapping  
+  4. eval() using Template Literals  
+  5. eval() using String Concatenation  
+  6. Arrow Function + Ternary Chain 
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/basicOp.js)
