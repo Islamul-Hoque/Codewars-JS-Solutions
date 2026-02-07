@@ -44,6 +44,12 @@ const basicOpEval = (op, v1, v2) => eval(`${v1} ${op} ${v2}`);
 // Approach 5: eval() using String Concatenation
 const basicOpEvalConcat = (operation, value1, value2) => eval(value1 + operation + value2);
 
+// Approach 6: Arrow Function + Ternary Chain
+const basicOpTernary = (op, v1, v2) =>
+    op === '+' ? v1 + v2 :
+    op === '-' ? v1 - v2 :
+    op === '*' ? v1 * v2 :
+    op === '/' ? v1 / v2 : "Operation must be one of + - * /"
 
 // Test Outputs
 console.log(basicOpIfElse('+', 4, 7));   // 11
@@ -52,3 +58,5 @@ console.log(basicOpMap('*', 5, 5));      // 25
 
 console.log(basicOpEval('/', 49, 7));    // 7
 console.log(basicOpEvalConcat('+', 4, 7)); // 11 
+
+console.log(basicOpTernary('+', 10, 20));// 30
