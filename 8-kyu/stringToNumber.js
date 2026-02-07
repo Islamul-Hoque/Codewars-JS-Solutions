@@ -23,9 +23,13 @@ const stringToNumberMultiply = str => str * 1  // Multiplying by 1 is a common t
 // Approach 5: parseFloat()
 const stringToNumberParseFloat = str => parseFloat(str) // parseFloat() can handle both integers and floating-point numbers.
 
+// Approach 6: Math.floor(parseFloat())
+const stringToNumberFloor = str => Math.floor(parseFloat(str)) // This approach first converts the string to a floating-point number using parseFloat(), and then applies Math.floor() to round it down to the nearest integer. 
+
 // Test Outputs
 console.log(stringToNumberPlus("1234"));      // 1234
 console.log(stringToNumberNumber("605"));     // 605
 console.log(stringToNumberParseInt("1405"));  // 1405
 console.log(stringToNumberMultiply("-7"));    // -7
 console.log(stringToNumberParseFloat("42"));  // 42
+console.log(stringToNumberFloor("99.99"));    // 99
