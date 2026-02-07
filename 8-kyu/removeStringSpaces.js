@@ -24,10 +24,14 @@ function noSpaceFilter(str) {
     return str.split('').filter(ch => ch !== ' ').join('');
 }
 
-
+// Approach 5: Using reduce()
+function noSpaceReduce(str) {
+    return str.split('').reduce((acc, ch) => ch === ' ' ? acc : acc + ch, '');
+}
 
 // Test Outputs
 console.log(noSpaceSplitJoin("I S HFAk")) // "ISHFAK"
 console.log(noSpaceReplaceArrow("islamul Hoque 2006 @ gmail . com")) // "islamulhoque2006@gmail.com"
 console.log(noSpaceReplaceAll("    H   i       ")) // "Hi"
 console.log(noSpaceFilter(" Ban gla de sh       ")) // "Bangladesh"
+console.log(noSpaceReduce("Mern Stack Developer       ")) // "MernStackDeveloper"
