@@ -34,6 +34,12 @@ const abbrevNameDestructuring = name => {
     return firstInitial + "." + secondInitial;
 };
 
+// Approach 6: Split + Direct Indexing
+const abbrevNameSplitDirect = name => {
+    const parts = name.split(" ");
+    return parts[0][0].toUpperCase() + "." + parts[1][0].toUpperCase();
+};
+
 
 
 // Test Outputs
@@ -42,3 +48,4 @@ console.log(abbrevNameSubstr("Frontend Developer"))     // F.D
 console.log(abbrevNameIndexOf("React Developer"))       // R.D
 console.log(abbrevNameCharAt("MERN Stack"))             // M.S
 console.log(abbrevNameDestructuring("Web Developer"))   // W.D
+console.log(abbrevNameSplitDirect("Next.js Developer")) // N.D
