@@ -26,9 +26,19 @@ const abbrevNameIndexOf = name =>
 const abbrevNameCharAt = name =>
     name.split(" ").map(word => word.charAt(0).toUpperCase()).join(".");
 
+// Approach 5: Destructuring
+const abbrevNameDestructuring = name => {
+    const [firstName, lastName] = name.split(" ");
+    const firstInitial = firstName.charAt(0).toUpperCase();
+    const secondInitial = lastName.charAt(0).toUpperCase();
+    return firstInitial + "." + secondInitial;
+};
+
+
 
 // Test Outputs
 console.log(abbrevNameSplitMap("Islamul Hoque"))        // I.H
 console.log(abbrevNameSubstr("Frontend Developer"))     // F.D
 console.log(abbrevNameIndexOf("React Developer"))       // R.D
 console.log(abbrevNameCharAt("MERN Stack"))             // M.S
+console.log(abbrevNameDestructuring("Web Developer"))   // W.D
