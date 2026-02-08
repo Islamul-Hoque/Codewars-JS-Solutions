@@ -18,7 +18,13 @@ const abbrevNameSplitMap = name =>
 const abbrevNameSubstr = name =>
     name.split(" ").map(word => word.substr(0, 1).toUpperCase()).join(".");
 
+// Approach 3: IndexOf + Direct Access
+const abbrevNameIndexOf = name =>
+    name[0].toUpperCase() + "." + name[name.indexOf(" ") + 1].toUpperCase();
+
+
 
 // Test Outputs
 console.log(abbrevNameSplitMap("Islamul Hoque"))        // I.H
 console.log(abbrevNameSubstr("Frontend Developer"))     // F.D
+console.log(abbrevNameIndexOf("React Developer"))       // R.D
