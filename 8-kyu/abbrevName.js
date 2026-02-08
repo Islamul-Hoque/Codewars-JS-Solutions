@@ -14,7 +14,11 @@
 const abbrevNameSplitMap = name =>
     name.split(" ").map(word => word[0].toUpperCase()).join(".");
 
+// Approach 2: Split + substr()
+const abbrevNameSubstr = name =>
+    name.split(" ").map(word => word.substr(0, 1).toUpperCase()).join(".");
 
 
 // Test Outputs
 console.log(abbrevNameSplitMap("Islamul Hoque"))        // I.H
+console.log(abbrevNameSubstr("Frontend Developer"))     // F.D
