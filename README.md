@@ -165,3 +165,16 @@ Each problem is solved using multiple approaches to demonstrate different techni
   5. eval() using String Concatenation  
   6. Arrow Function + Ternary Chain 
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/basicOp.js)
+
+### 14. Abbreviate a Two Word Name
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/javascript)
+- **Approaches:**  
+  1. Split + Map + Join  
+  2. Split + substr()  
+  3. IndexOf + Direct Access  
+  4. Split + charAt()  
+  5. Destructuring  
+  6. Split + Direct Indexing  
+  7. Uppercase + Template Literal
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/abbrevName.js)
