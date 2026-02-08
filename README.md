@@ -200,3 +200,10 @@ Each problem is solved using multiple approaches to demonstrate different techni
   5. String Concatenation + Split + Map(Number) + Reverse  
   6. Array.from with Mapping Function
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/digitize.js)
+
+### 17. Opposites Attract
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/555086d53eac039a2a000083/javascript)
+- **Approaches:**  
+
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/lovefunc.js)
