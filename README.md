@@ -188,3 +188,15 @@ Each problem is solved using multiple approaches to demonstrate different techni
   3. String Replace  
   4. Array + Join 
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/returningStrings.js)
+
+### 16. Convert number to reversed array of digits
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/5583090cbe83f4fd8c000051/javascript)
+- **Approaches:**  
+  1. String + Split + Map + Reverse  
+  2. toString() + Split + Map + Reverse  
+  3. Spread Operator + Map + Reverse  
+  4. String Concatenation + Split + Unary Plus  
+  5. String Concatenation + Split + Map(Number) + Reverse  
+  6. Array.from with Mapping Function
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/digitize.js)
