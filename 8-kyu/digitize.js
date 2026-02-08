@@ -22,6 +22,8 @@ const digitizeUnaryPlus = n => (n + '').split('').reverse().map(x => +x);
 // Approach 5: String Concatenation + Split + Map(Number) + Reverse
 const digitizeConcatMap = n => (n + '').split('').map(Number).reverse();
 
+// Approach 6: Array.from with Mapping Function
+const digitizeArrayFrom = n => Array.from(String(n), Number).reverse();
 
 
 // Test Outputs
@@ -32,3 +34,4 @@ console.log(digitizeToString(35231));   // [1, 3, 2, 5, 3]
 console.log(digitizeSpread(35231));     // [1, 3, 2, 5, 3]
 console.log(digitizeUnaryPlus(35231));  // [1, 3, 2, 5, 3]
 console.log(digitizeConcatMap(35231));  // [1, 3, 2, 5, 3]
+console.log(digitizeArrayFrom(35231));  // [1, 3, 2, 5, 3]
