@@ -40,7 +40,11 @@ const abbrevNameSplitDirect = name => {
     return parts[0][0].toUpperCase() + "." + parts[1][0].toUpperCase();
 };
 
-
+// Approach 7: Uppercase + Template Literal
+const abbrevNameTemplate = name => {
+    let arr = name.toUpperCase().split(" ");
+    return `${arr[0][0]}.${arr[1][0]}`;
+};
 
 // Test Outputs
 console.log(abbrevNameSplitMap("Islamul Hoque"))        // I.H
@@ -49,3 +53,4 @@ console.log(abbrevNameIndexOf("React Developer"))       // R.D
 console.log(abbrevNameCharAt("MERN Stack"))             // M.S
 console.log(abbrevNameDestructuring("Web Developer"))   // W.D
 console.log(abbrevNameSplitDirect("Next.js Developer")) // N.D
+console.log(abbrevNameTemplate("Fullstack Engineer"))   // F.E
