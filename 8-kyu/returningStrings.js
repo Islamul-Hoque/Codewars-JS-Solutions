@@ -10,8 +10,13 @@ const greetTemplate = name => `Hello, ${name} how are you doing today?`;
 // Approach 2: String Concatenation
 const greetConcat = name => "Hello, " + name + " how are you doing today?";
 
+// Approach 3: String Replace
+const greetReplace = name =>
+  "Hello, <name> how are you doing today?".replace("<name>", name);
+
 
 
 // Test Outputs
 console.log(greetTemplate("Ishfak"));    // Hello, Ishfak how are you doing today?
 console.log(greetConcat("Ishfak"));      // Hello, Ishfak how are you doing today?
+console.log(greetReplace("Ishfak"));     // Hello, Ishfak how are you doing today?
