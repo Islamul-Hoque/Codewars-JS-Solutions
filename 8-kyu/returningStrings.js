@@ -7,7 +7,11 @@
 // Approach 1: Template Literal
 const greetTemplate = name => `Hello, ${name} how are you doing today?`;
 
+// Approach 2: String Concatenation
+const greetConcat = name => "Hello, " + name + " how are you doing today?";
+
 
 
 // Test Outputs
 console.log(greetTemplate("Ishfak"));    // Hello, Ishfak how are you doing today?
+console.log(greetConcat("Ishfak"));      // Hello, Ishfak how are you doing today?
