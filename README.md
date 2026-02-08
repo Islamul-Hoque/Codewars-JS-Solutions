@@ -178,3 +178,13 @@ Each problem is solved using multiple approaches to demonstrate different techni
   6. Split + Direct Indexing  
   7. Uppercase + Template Literal
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/abbrevName.js)
+
+### 15. Returning Strings
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/55a70521798b14d4750000a4/javascript)
+- **Approaches:**  
+  1. Template Literal  
+  2. String Concatenation  
+  3. String Replace  
+  4. Array + Join 
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/returningStrings.js)
