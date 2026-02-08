@@ -8,7 +8,10 @@
 // Approach 1: Modulo Check
 const lovefuncModulo = (flower1, flower2) => flower1 % 2 !== flower2 % 2;
 
+// Approach 2: Sum Check
+const lovefuncSum = (flower1, flower2) => (flower1 + flower2) % 2 === 1;
 
 
 console.log(lovefuncModulo(2, 3)); // true
 
+console.log(lovefuncSum(2, 3));    // true
