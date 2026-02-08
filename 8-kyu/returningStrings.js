@@ -14,9 +14,14 @@ const greetConcat = name => "Hello, " + name + " how are you doing today?";
 const greetReplace = name =>
   "Hello, <name> how are you doing today?".replace("<name>", name);
 
-
+// Approach 4: Array + Join
+const greetJoin = function(name) {
+  const arr = ["Hello,", name, "how", "are", "you", "doing", "today?"];
+  return arr.join(" ");
+};
 
 // Test Outputs
 console.log(greetTemplate("Ishfak"));    // Hello, Ishfak how are you doing today?
 console.log(greetConcat("Ishfak"));      // Hello, Ishfak how are you doing today?
 console.log(greetReplace("Ishfak"));     // Hello, Ishfak how are you doing today?
+console.log(greetJoin("Developer"));     // Hello, Developer how are you doing today?
