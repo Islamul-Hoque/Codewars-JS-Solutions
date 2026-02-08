@@ -13,6 +13,9 @@ const digitizeSplitMap = n => String(n).split("").reverse().map(Number);
 // Approach 2: toString() + Split + Map + Reverse
 const digitizeToString = n => n.toString().split("").reverse().map(Number);
 
+// Approach 3: Spread Operator + Map + Reverse
+const digitizeSpread = n => [...String(n)].reverse().map(Number);
+
 
 
 // Test Outputs
@@ -20,3 +23,4 @@ console.log(digitizeSplitMap(35231));   // [1, 3, 2, 5, 3]
 console.log(digitizeSplitMap(0));       // [0]
 
 console.log(digitizeToString(35231));   // [1, 3, 2, 5, 3]
+console.log(digitizeSpread(35231));     // [1, 3, 2, 5, 3]
