@@ -14,7 +14,16 @@ const loveFuncSum = (flower1, flower2) => (flower1 + flower2) % 2 === 1;
 // Approach 3: Using bitwise XOR 
 const loveFuncBitwise = (flower1, flower2) => !!((flower1 ^ flower2) % 2) // !!1 => true, !!0 => false
 
+// Approach 4 : If-Else Condition
+function loveFuncIfElseSimple(flower1, flower2) {
+    if (flower1 % 2 !== flower2 % 2) {
+        return true;
+    }
+    return false;
+}
 
 // Test Outputs
 console.log(loveFuncModulo(2, 3))        // true
 console.log(loveFuncSum(2, 3))           // true
+console.log(loveFuncBitwise(2, 4))       // false
+console.log(loveFuncIfElseSimple(2, 3))  // true
