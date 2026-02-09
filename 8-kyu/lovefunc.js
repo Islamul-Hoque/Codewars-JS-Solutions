@@ -6,12 +6,15 @@
 // 🔗 Problem link: https://www.codewars.com/kata/555086d53eac039a2a000083/javascript
 
 // Approach 1: Modulo Check
-const lovefuncModulo = (flower1, flower2) => flower1 % 2 !== flower2 % 2;
+const loveFuncModulo = (flower1, flower2) => flower1 % 2 !== flower2 % 2;
 
 // Approach 2: Sum Check
-const lovefuncSum = (flower1, flower2) => (flower1 + flower2) % 2 === 1;
+const loveFuncSum = (flower1, flower2) => (flower1 + flower2) % 2 === 1;
+
+// Approach 3: Using bitwise XOR 
+const loveFuncBitwise = (flower1, flower2) => !!((flower1 ^ flower2) % 2) // !!1 => true, !!0 => false
 
 
-console.log(lovefuncModulo(2, 3)); // true
-
-console.log(lovefuncSum(2, 3));    // true
+// Test Outputs
+console.log(loveFuncModulo(2, 3))        // true
+console.log(loveFuncSum(2, 3))           // true

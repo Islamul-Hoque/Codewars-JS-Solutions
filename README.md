@@ -205,5 +205,8 @@ Each problem is solved using multiple approaches to demonstrate different techni
 - **Difficulty:** 8 kyu  
 - **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/555086d53eac039a2a000083/javascript)
 - **Approaches:**  
-
-- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/lovefunc.js)
+  1. Modulo Check  
+  2. Sum Check  
+  3. Bitwise XOR  
+  4. If-Else Condition 
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/loveFunc.js)
