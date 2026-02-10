@@ -38,7 +38,10 @@ const summationRec1 = function (num) {
     }
 }
 
-
+// Approach 6: Recursion (ternary base case)
+const summationRec2 = function (num) {
+    return (num > 1) ? num + summationRec2(num - 1) : num;
+}
 
 // Test Outputs
 console.log(summationFormula(5));     // 15
@@ -46,3 +49,4 @@ console.log(summationFormulaInc(5));  // 15
 console.log(summationReduce(5));      // 15
 console.log(summationLoop(5));        // 15
 console.log(summationRec1(5));        // 15
+console.log(summationRec2(5));        // 15
