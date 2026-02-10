@@ -12,6 +12,10 @@
 // Approach 1: Formula (Gauss Summation)
 const summationFormula = num => (num * (num + 1)) / 2;
 
+// Approach 2: Formula with ++num
+const summationFormulaInc = num => num * ++num / 2;
+
 
 // Test Outputs
 console.log(summationFormula(5));     // 15
+console.log(summationFormulaInc(5));  // 15
