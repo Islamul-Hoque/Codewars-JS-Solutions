@@ -15,7 +15,14 @@ const summationFormula = num => (num * (num + 1)) / 2;
 // Approach 2: Formula with ++num
 const summationFormulaInc = num => num * ++num / 2;
 
+// Approach 3: Array + Reduce
+const summationReduce = num => (
+    Array(num).fill(true).reduce((sum, item, index) => sum + index + 1, 0)
+);
+
+
 
 // Test Outputs
 console.log(summationFormula(5));     // 15
 console.log(summationFormulaInc(5));  // 15
+console.log(summationReduce(5));      // 15
