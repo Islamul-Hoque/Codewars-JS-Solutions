@@ -210,3 +210,15 @@ Each problem is solved using multiple approaches to demonstrate different techni
   3. Bitwise XOR  
   4. If-Else Condition 
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/loveFunc.js)
+
+### 18. Grasshopper - Summation
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/55d24f55d7dd296eb9000030/javascript)
+- **Approaches:**  
+  1. Formula (Gauss Summation)  
+  2. Formula with ++num  
+  3. Array + Reduce  
+  4. Loop (for)  
+  5. Recursion (base case <= 1)  
+  6. Recursion (ternary base case) 
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/summation.js)
