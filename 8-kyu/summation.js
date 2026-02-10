@@ -20,9 +20,18 @@ const summationReduce = num => (
     Array(num).fill(true).reduce((sum, item, index) => sum + index + 1, 0)
 );
 
+// Approach 4: Loop
+function summationLoop(num) {
+    let sum = 0;
+    for (let i = 1; i <= num; i++) {
+        sum += i;
+    }
+    return sum;
+}
 
 
 // Test Outputs
 console.log(summationFormula(5));     // 15
 console.log(summationFormulaInc(5));  // 15
 console.log(summationReduce(5));      // 15
+console.log(summationLoop(5));        // 15
