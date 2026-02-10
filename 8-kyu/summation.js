@@ -29,9 +29,20 @@ function summationLoop(num) {
     return sum;
 }
 
+// Approach 5: Recursion (base case <= 1)
+const summationRec1 = function (num) {
+    if (num <= 1) {
+        return 1;
+    } else {
+        return num + summationRec1(num - 1);
+    }
+}
+
+
 
 // Test Outputs
 console.log(summationFormula(5));     // 15
 console.log(summationFormulaInc(5));  // 15
 console.log(summationReduce(5));      // 15
 console.log(summationLoop(5));        // 15
+console.log(summationRec1(5));        // 15
