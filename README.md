@@ -222,3 +222,13 @@ Each problem is solved using multiple approaches to demonstrate different techni
   5. Recursion (base case <= 1)  
   6. Recursion (ternary base case) 
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/summation.js)
+
+### 19. A Needle in the Haystack
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/56676e8fabd2d1ff3000000c/javascript)
+- **Approaches:**  
+  1. indexOf + string concatenation  
+  2. indexOf + template literal  
+  3. findIndex  
+  4. indexOf + ternary operator (fallback message) 
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/findNeedle.js)
