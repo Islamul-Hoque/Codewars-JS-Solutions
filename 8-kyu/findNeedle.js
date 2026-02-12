@@ -20,6 +20,13 @@ function findNeedleIndexOf(haystack) {
 const findNeedleTemplate = haystack =>
     `found the needle at position ${haystack.indexOf("needle")}`;
 
+// Approach 3: findIndex
+function findNeedleFindIndex(haystack) {
+    const index = haystack.findIndex(item => item === "needle");
+    return `found the needle at position ${index}`;
+}
+
+
 
 // Test Outputs
 const testArray1 = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"];
@@ -27,3 +34,6 @@ const testArray2 = ["hay", "junk", "hay"];
 
 console.log(findNeedleIndexOf(testArray1));   // "found the needle at position 5"
 console.log(findNeedleTemplate(testArray1));  // "found the needle at position 5"
+console.log(findNeedleFindIndex(testArray1)); // "found the needle at position 5"
+
+console.log(findNeedleTernary(testArray1));   // "found the needle at position 5"
