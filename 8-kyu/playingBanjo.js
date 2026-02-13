@@ -23,7 +23,15 @@ const areYouPlayingBanjoIndex = name =>
         ? `${name} plays banjo`
         : `${name} does not play banjo`;
 
+// Approach 3: slice method
+function areYouPlayingBanjoSlice(name) {
+    return name.slice(0, 1).toLowerCase() === 'r'
+        ? `${name} plays banjo`
+        : `${name} does not play banjo`;
+}
+
 
 // Test Outputs
 console.log(areYouPlayingBanjoStartsWith("Rick"));   // "Rick plays banjo"
 console.log(areYouPlayingBanjoIndex("martin"));      // "martin does not play banjo"
+console.log(areYouPlayingBanjoSlice("Rosa"));        // "Rosa plays banjo"
