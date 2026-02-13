@@ -232,3 +232,14 @@ Each problem is solved using multiple approaches to demonstrate different techni
   3. findIndex  
   4. indexOf + ternary operator (fallback message) 
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/findNeedle.js)
+
+### 20. Are You Playing Banjo?
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/53af2b8861023f1d88000832/javascript)
+- **Approaches:**  
+  1. startsWith + ternary  
+  2. index check + ternary  
+  3. slice method  
+  4. if/else  
+  5. regex 
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/playingBanjo.js)
