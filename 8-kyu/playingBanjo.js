@@ -17,7 +17,13 @@ const areYouPlayingBanjoStartsWith = name =>
         ? `${name} plays banjo`
         : `${name} does not play banjo`;
 
+// Approach 2: index check + ternary
+const areYouPlayingBanjoIndex = name =>
+    name[0].toLowerCase() === 'r'
+        ? `${name} plays banjo`
+        : `${name} does not play banjo`;
 
 
 // Test Outputs
 console.log(areYouPlayingBanjoStartsWith("Rick"));   // "Rick plays banjo"
+console.log(areYouPlayingBanjoIndex("martin"));      // "martin does not play banjo"
