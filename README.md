@@ -240,6 +240,4 @@ Each problem is solved using multiple approaches to demonstrate different techni
   1. startsWith + ternary  
   2. index check + ternary  
   3. slice method  
-  4. if/else  
-  5. regex 
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/playingBanjo.js)
