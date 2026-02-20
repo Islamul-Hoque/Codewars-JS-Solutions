@@ -17,8 +17,17 @@ function isDivisibleTernary(n, x, y) {
     return (n % x === 0 && n % y === 0) ? true : false;
 }
 
+// Approach 3: if/else statement
+function isDivisibleIfElse(n, x, y) {
+    if (n % x === 0 && n % y === 0) {
+        return true;
+    }
+    return false;
+}
+
 
 
 // Test Outputs
 console.log(isDivisibleArrow(12, 2, 6));     // true
 console.log(isDivisibleTernary(100, 5, 3));  // false
+console.log(isDivisibleIfElse(3, 1, 3));     // true
