@@ -25,9 +25,13 @@ function isDivisibleIfElse(n, x, y) {
     return false;
 }
 
-
+// Approach 4: logical trick with modulo
+function isDivisibleLogical(n, x, y) {
+    return !(n % x || n % y);
+}
 
 // Test Outputs
 console.log(isDivisibleArrow(12, 2, 6));     // true
 console.log(isDivisibleTernary(100, 5, 3));  // false
 console.log(isDivisibleIfElse(3, 1, 3));     // true
+console.log(isDivisibleLogical(12, 7, 5));   // false
