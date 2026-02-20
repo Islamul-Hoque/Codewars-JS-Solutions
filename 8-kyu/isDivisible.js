@@ -12,7 +12,13 @@
 // Approach 1: concise arrow function
 const isDivisibleArrow = (n, x, y) => n % x === 0 && n % y === 0;
 
+// Approach 2: ternary operator
+function isDivisibleTernary(n, x, y) {
+    return (n % x === 0 && n % y === 0) ? true : false;
+}
+
 
 
 // Test Outputs
 console.log(isDivisibleArrow(12, 2, 6));     // true
+console.log(isDivisibleTernary(100, 5, 3));  // false
