@@ -241,3 +241,23 @@ Each problem is solved using multiple approaches to demonstrate different techni
   2. index check + ternary  
   3. slice method  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/playingBanjo.js)
+
+### 21. Beginner - Lost Without a Map
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/57f781872e3d8ca2a000007e/javascript)
+- **Approaches:**  
+  1. map method  
+  2. arrow function + map  
+  3. for loop  
+  4. for...of loop  
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/doubleArrayValues.js)
+
+### 22. Is n divisible by x and y?
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/5545f109004975ea66000086/javascript)
+- **Approaches:**  
+  1. Arrow function
+  2. Ternary operator  
+  3. If/Else statement  
+  4. Logical modulo trick  
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/isDivisible.js)
