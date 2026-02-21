@@ -261,3 +261,12 @@ Each problem is solved using multiple approaches to demonstrate different techni
   3. If/Else statement  
   4. Logical modulo trick  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/isDivisible.js)
+
+### 22. Is n divisible by x and y?
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](http://codewars.com/kata/57a2013acf1fa5bfc4000921/javascript)
+- **Approaches:**  
+  1. Arrow function + reduce  
+  2. For...of loop  
+  3. ForEach loop
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/findAverage.js)
