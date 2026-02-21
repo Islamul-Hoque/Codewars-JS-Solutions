@@ -18,10 +18,22 @@ function findAverageForOf(array) {
     return result / array.length;
 }
 
-
+// Approach 3: forEach loop
+function findAverageForEach(array) {
+    if (array.length === 0) {
+        return 0;
+    } else {        
+        let res = 0;
+        array.forEach(item => {
+            res += item;
+        });
+        return res / array.length;
+    }
+}
 
 // Test Outputs
 console.log(findAverageArrow([1, 2, 3]));       // 2
 console.log(findAverageArrow([100]));           // 100
 
 console.log(findAverageForOf([5, 10, 15]));     // 10
+console.log(findAverageForEach([]));            // 0
