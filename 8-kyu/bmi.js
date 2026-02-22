@@ -25,9 +25,19 @@ const bmiArrow = (weight, height) => {
                 : "Obese";
 };
 
-
+// Approach 3: switch(true)
+function bmiSwitch(weight, height) {
+    const value = weight / (height * height);
+    switch (true) {
+        case value <= 18.5: return "Underweight";
+        case value <= 25.0: return "Normal";
+        case value <= 30.0: return "Overweight";
+        default: return "Obese";
+    }
+}
 
 // Test Outputs
 console.log(bmiIfElse(50, 1.70));   // "Underweight" (≈17.3)
 console.log(bmiArrow(65, 1.70));    // "Normal" (≈22.5)
 console.log(bmiSwitch(80, 1.70));   // "Overweight" (≈27.7)
+console.log(bmiIfElse(95, 1.70));   // "Obese" (≈32.9)
