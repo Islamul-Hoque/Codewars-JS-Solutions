@@ -18,7 +18,13 @@ function DNAtoRNAReplaceAll(dna) {
     return dna.replaceAll("T", "U");
 }
 
+// Approach 3: split + join
+function DNAtoRNASplitJoin(dna) {
+    return dna.split("T").join("U");
+}
+
 
 // Test Outputs
 console.log(DNAtoRNAReplace("GCAT"));      // "GCAU"
 console.log(DNAtoRNAReplaceAll("GATTACA"));// "GAUUACA"
+console.log(DNAtoRNASplitJoin("TTTT"));    // "UUUU"
