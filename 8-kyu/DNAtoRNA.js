@@ -13,6 +13,12 @@
 // Approach 1: Arrow + replace (regex)
 const DNAtoRNAReplace = dna => dna.replace(/T/g, "U");
 
+// Approach 2: replaceAll
+function DNAtoRNAReplaceAll(dna) {
+    return dna.replaceAll("T", "U");
+}
+
 
 // Test Outputs
 console.log(DNAtoRNAReplace("GCAT"));      // "GCAU"
+console.log(DNAtoRNAReplaceAll("GATTACA"));// "GAUUACA"
