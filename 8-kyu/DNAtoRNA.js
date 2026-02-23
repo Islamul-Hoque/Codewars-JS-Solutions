@@ -23,8 +23,12 @@ function DNAtoRNASplitJoin(dna) {
     return dna.split("T").join("U");
 }
 
+// Approach 4: spread + map + join
+const DNAtoRNAMapSpread = dna => [...dna].map(base => base === "T" ? "U" : base).join("");
+
 
 // Test Outputs
 console.log(DNAtoRNAReplace("GCAT"));      // "GCAU"
 console.log(DNAtoRNAReplaceAll("GATTACA"));// "GAUUACA"
 console.log(DNAtoRNASplitJoin("TTTT"));    // "UUUU"
+console.log(DNAtoRNAMapSpread("CCGT"));    // "CCGU"
