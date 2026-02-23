@@ -279,3 +279,14 @@ Each problem is solved using multiple approaches to demonstrate different techni
   2. Arrow function with ternary chain  
   3. Switch(true) branching 
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/bmi.js)
+
+### 25. DNA to RNA Conversion
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/5556282156230d0e5e000089/javascript)
+- **Approaches:**  
+  1. Arrow function with `replace` (regex)  
+  2. Using `replaceAll`  
+  3. Using `split` + `join`  
+  4. Using spread + `map` + `join`  
+  5. Using `split` + `map` + `join` 
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/DNAtoRNA.js)
