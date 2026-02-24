@@ -290,3 +290,13 @@ Each problem is solved using multiple approaches to demonstrate different techni
   4. Using spread + `map` + `join`  
   5. Using `split` + `map` + `join` 
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/DNAtoRNA.js)
+
+### 26. Count of positives / sum of negatives
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/576bb71bbbcf0951d5000044/javascript)
+- **Approaches:**  
+  1. Using `filter` + `reduce`  
+  2. Using double `reduce` (separate for positives and negatives)  
+  3. Using single `reduce` with ternary operator  
+  4. Using single `reduce` with `if/else` conditions 
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/countPositivesSumNegatives.js)
