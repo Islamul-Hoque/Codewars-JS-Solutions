@@ -17,7 +17,18 @@ function countPositivesSumNegativesFilter(input) {
         : [];
 }
 
+// Approach 2: reduce twice
+function countPositivesSumNegativesDoubleReduce(input) {
+    if (!input || input.length == 0) return [];
+
+    const positiveCount = input.reduce((sum, item) => item > 0 ? ++sum : sum, 0);
+    const negativeSum = input.reduce((sum, item) => item < 0 ? sum + item : sum, 0);
+
+    return [positiveCount, negativeSum];
+}
+
 
 
 // Test Outputs
 console.log(countPositivesSumNegativesFilter([1,2,3,-1,-2,-3]))                    // [3, -6]
+console.log(countPositivesSumNegativesDoubleReduce([1,2,3,4,-11,-12,-13,-14,-15])) // [4, -65]
