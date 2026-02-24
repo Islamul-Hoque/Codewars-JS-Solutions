@@ -40,9 +40,19 @@ function countPositivesSumNegativesTernary(input) {
     );
 }
 
-
+// Approach 4: reduce + if/else
+function countPositivesSumNegativesIfElse(input) {
+    if (!Array.isArray(input) || !input.length) return [];
+    return input.reduce((arr, n) => {
+        if (n > 0) arr[0]++;
+        if (n < 0) arr[1] += n;
+        return arr;
+    }, [0, 0]);
+}
 
 // Test Outputs
 console.log(countPositivesSumNegativesFilter([1,2,3,-1,-2,-3]))                    // [3, -6]
 console.log(countPositivesSumNegativesDoubleReduce([1,2,3,4,-11,-12,-13,-14,-15])) // [4, -65]
 console.log(countPositivesSumNegativesTernary([0,0,0]))                            // [0, 0]
+console.log(countPositivesSumNegativesIfElse([]))                                  // []
+console.log(countPositivesSumNegativesIfElse(null))                                 // []
