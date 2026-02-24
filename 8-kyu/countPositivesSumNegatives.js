@@ -27,8 +27,22 @@ function countPositivesSumNegativesDoubleReduce(input) {
     return [positiveCount, negativeSum];
 }
 
+// Approach 3: reduce + ternary
+function countPositivesSumNegativesTernary(input) {
+    if (!input || input.length === 0) return [];
+
+    return input.reduce(
+        (acc, num) => [
+            acc[0] + (num > 0 ? 1 : 0),
+            acc[1] + (num < 0 ? num : 0)
+        ],
+        [0, 0]
+    );
+}
+
 
 
 // Test Outputs
 console.log(countPositivesSumNegativesFilter([1,2,3,-1,-2,-3]))                    // [3, -6]
 console.log(countPositivesSumNegativesDoubleReduce([1,2,3,4,-11,-12,-13,-14,-15])) // [4, -65]
+console.log(countPositivesSumNegativesTernary([0,0,0]))                            // [0, 0]
