@@ -39,7 +39,18 @@ const rpsTernary = (p1, p2) =>
     : p1 === p2 ? "Draw!"
     : "Player 1 won!"
 
+// Approach 3: object mapping
+function rpsMapping(p1, p2) {
+    if (p1 === p2) return "Draw!"
 
+    const rules = {
+        rock: "scissors",
+        scissors: "paper",
+        paper: "rock"
+    };
+
+    return rules[p1] === p2 ? "Player 1 won!" : "Player 2 won!"
+}
 
 
 // Test Outputs
@@ -51,3 +62,6 @@ console.log(rpsTernary("rock", "scissors"))   // Player 1 won!
 console.log(rpsTernary("rock", "paper"))      // Player 2 won!
 console.log(rpsTernary("rock", "rock"))       // Draw!
 
+console.log(rpsMapping("paper", "rock"))      // Player 1 won!
+console.log(rpsMapping("scissors", "paper"))  // Player 1 won!
+console.log(rpsMapping("scissors", "rock"))   // Player 2 won!
