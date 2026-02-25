@@ -300,3 +300,12 @@ Each problem is solved using multiple approaches to demonstrate different techni
   3. Using single `reduce` with ternary operator  
   4. Using single `reduce` with `if/else` conditions 
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/countPositivesSumNegatives.js)
+
+### 27. Rock Paper Scissors
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/5672a98bdbdd995fad00000f/javascript)
+- **Approaches:**  
+  1. Using `if/else` conditions  
+  2. Using nested ternary operator  
+  3. Using object mapping (rules object)  
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/rockPaperScissors.js)
