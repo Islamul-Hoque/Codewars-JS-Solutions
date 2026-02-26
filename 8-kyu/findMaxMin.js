@@ -24,7 +24,6 @@ const minSortArrow = list => list.sort((a, b) => a - b)[0]
 const maxSortArrow = list => list.sort((a, b) => b - a)[0]
 
 
-
 // Test Outputs
 const arr1 = [4, 6, 2, 1, 9, 63, -134, 566];
 const arr2 = [-52, 56, 30, 29, -54, 0, -110];
@@ -33,3 +32,4 @@ const arr4 = [5];
 
 console.log("Math:", minMath(arr1), maxMath(arr1))                // -134, 566
 console.log("Reduce:", minReduce(arr2), maxReduce(arr2))          // -110, 56
+console.log("SortArrow:", minSortArrow(arr3), maxSortArrow(arr3)) // 0, 87
