@@ -15,6 +15,14 @@
 const minMath = list => Math.min(...list)
 const maxMath = list => Math.max(...list)
 
+// Approach 2: Using reduce method
+const minReduce = list => list.reduce((a, b) => a < b ? a : b)
+const maxReduce = list => list.reduce((a, b) => a > b ? a : b)
+
+// Approach 3: Using sort with arrow function
+const minSortArrow = list => list.sort((a, b) => a - b)[0]
+const maxSortArrow = list => list.sort((a, b) => b - a)[0]
+
 
 
 // Test Outputs
@@ -24,3 +32,4 @@ const arr3 = [42, 54, 65, 87, 0];
 const arr4 = [5];
 
 console.log("Math:", minMath(arr1), maxMath(arr1))                // -134, 566
+console.log("Reduce:", minReduce(arr2), maxReduce(arr2))          // -110, 56
