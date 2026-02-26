@@ -23,6 +23,17 @@ const maxReduce = list => list.reduce((a, b) => a > b ? a : b)
 const minSortArrow = list => list.sort((a, b) => a - b)[0]
 const maxSortArrow = list => list.sort((a, b) => b - a)[0]
 
+// Approach 4: Using sort with function expression
+const minSortFunc = function (list) {
+    list.sort((a, b) => a - b)
+    return list[0]
+};
+
+const maxSortFunc = function (list) {
+    list.sort((a, b) => b - a)
+    return list[0]
+};
+
 
 // Test Outputs
 const arr1 = [4, 6, 2, 1, 9, 63, -134, 566];
@@ -33,3 +44,4 @@ const arr4 = [5];
 console.log("Math:", minMath(arr1), maxMath(arr1))                // -134, 566
 console.log("Reduce:", minReduce(arr2), maxReduce(arr2))          // -110, 56
 console.log("SortArrow:", minSortArrow(arr3), maxSortArrow(arr3)) // 0, 87
+console.log("SortFunc:", minSortFunc(arr4), maxSortFunc(arr4))    // 5, 5
