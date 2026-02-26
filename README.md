@@ -309,3 +309,15 @@ Each problem is solved using multiple approaches to demonstrate different techni
   2. Using nested ternary operator  
   3. Using object mapping (rules object)  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/rockPaperScissors.js)
+
+### 28. Find Maximum and Minimum Values of a List
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/577a98a6ae28071780000989/javascript)
+- **Approaches:**  
+  1. Using `Math.min` and `Math.max` with spread operator  
+  2. Using `reduce` method  
+  3. Using `sort` with arrow function  
+  4. Using `sort` with function expression 
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/findMaxMin.js)
+
+
