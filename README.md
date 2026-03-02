@@ -320,4 +320,13 @@ Each problem is solved using multiple approaches to demonstrate different techni
   4. Using `sort` with function expression 
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/findMaxMin.js)
 
-
+### 29. Array plus array
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/javascript)
+- **Approaches:**  
+  1. Using spread operator + `reduce`  
+  2. Using `concat` + `reduce`  
+  3. Using `for...of` loop  
+  4. Using `forEach` method  
+  5. Using `flat` + loop  
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/arrayPlusArray.js)
