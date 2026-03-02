@@ -10,6 +10,11 @@
 const arrayPlusArraySpread = (arr1, arr2) =>
     [...arr1, ...arr2].reduce((sum, num) => sum + num, 0);
 
+// Approach 2: Concat + Reduce
+function arrayPlusArrayConcat(arr1, arr2) {
+    return arr1.concat(arr2).reduce((a, b) => a + b, 0);
+}
+
 
 
 // Test Outputs
@@ -17,3 +22,4 @@ const arrA = [1, 2, 3];
 const arrB = [4, 5, 6];
 
 console.log("Spread+Reduce:", arrayPlusArraySpread(arrA, arrB));   // 21
+console.log("Concat+Reduce:", arrayPlusArrayConcat(arrA, arrB));   // 21
