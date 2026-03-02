@@ -15,6 +15,14 @@ function arrayPlusArrayConcat(arr1, arr2) {
     return arr1.concat(arr2).reduce((a, b) => a + b, 0);
 }
 
+// Approach 3: For...of Loop
+function arrayPlusArrayForOf(arr1, arr2) {
+    let sum = 0;
+    for (const num of arr1) sum += num;
+    for (const num of arr2) sum += num;
+    return sum;
+}
+
 
 
 // Test Outputs
@@ -23,3 +31,4 @@ const arrB = [4, 5, 6];
 
 console.log("Spread+Reduce:", arrayPlusArraySpread(arrA, arrB));   // 21
 console.log("Concat+Reduce:", arrayPlusArrayConcat(arrA, arrB));   // 21
+console.log("ForOf:", arrayPlusArrayForOf(arrA, arrB));            // 21
