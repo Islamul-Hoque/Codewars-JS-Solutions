@@ -31,6 +31,13 @@ function arrayPlusArrayForEach(arr1, arr2) {
     return sum;
 }
 
+// Approach 5: flat + Loop
+function arrayPlusArrayFlat(arr1, arr2) {
+    const merged = [arr1, arr2].flat();
+    let sum = 0;
+    for (const num of merged) sum += num;
+    return sum;
+}
 
 
 // Test Outputs
@@ -41,3 +48,4 @@ console.log("Spread+Reduce:", arrayPlusArraySpread(arrA, arrB));   // 21
 console.log("Concat+Reduce:", arrayPlusArrayConcat(arrA, arrB));   // 21
 console.log("ForOf:", arrayPlusArrayForOf(arrA, arrB));            // 21
 console.log("ForEach:", arrayPlusArrayForEach(arrA, arrB));        // 21
+console.log("Flat+Loop:", arrayPlusArrayFlat(arrA, arrB));         // 21
