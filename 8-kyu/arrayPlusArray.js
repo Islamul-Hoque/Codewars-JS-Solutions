@@ -23,6 +23,14 @@ function arrayPlusArrayForOf(arr1, arr2) {
     return sum;
 }
 
+// Approach 4: forEach
+function arrayPlusArrayForEach(arr1, arr2) {
+    let sum = 0;
+    arr1.forEach(num => sum += num);
+    arr2.forEach(num => sum += num);
+    return sum;
+}
+
 
 
 // Test Outputs
@@ -32,3 +40,4 @@ const arrB = [4, 5, 6];
 console.log("Spread+Reduce:", arrayPlusArraySpread(arrA, arrB));   // 21
 console.log("Concat+Reduce:", arrayPlusArrayConcat(arrA, arrB));   // 21
 console.log("ForOf:", arrayPlusArrayForOf(arrA, arrB));            // 21
+console.log("ForEach:", arrayPlusArrayForEach(arrA, arrB));        // 21
