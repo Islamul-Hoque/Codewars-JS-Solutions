@@ -18,7 +18,10 @@
 // Approach 1: Ternary (clean)
 const areaOrPerimeterTernary = (l, w) => l === w ? l * w : 2 * (l + w);
 
+// Approach 2: Ternary with l - w trick
+const areaOrPerimeterDiff = (l, w) => l - w ? (l + w) * 2 : l ** 2;
 
 
 //  Test Outputs 
 console.log(areaOrPerimeterTernary(6, 10)); // 32
+console.log(areaOrPerimeterDiff(3, 3));     // 9
