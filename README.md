@@ -330,3 +330,14 @@ Each problem is solved using multiple approaches to demonstrate different techni
   4. Using `forEach` method  
   5. Using `flat` + loop  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/arrayPlusArray.js)
+
+### 30. areaOrPerimeter
+- **Difficulty:** 8 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/5ab6538b379d20ad880000ab/javascript)
+- **Approaches:**  
+  1. Using ternary operator 
+  2. Using ternary with `l - w` trick  
+  3. Using `if...return` (without else)  
+  4. Using `Math.pow` for square area  
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/areaOrPerimeter.js)
+

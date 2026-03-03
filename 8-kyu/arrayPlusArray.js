@@ -49,3 +49,4 @@ console.log("Concat+Reduce:", arrayPlusArrayConcat(arrA, arrB));   // 21
 console.log("ForOf:", arrayPlusArrayForOf(arrA, arrB));            // 21
 console.log("ForEach:", arrayPlusArrayForEach(arrA, arrB));        // 21
 console.log("Flat+Loop:", arrayPlusArrayFlat(arrA, arrB));         // 21
+
