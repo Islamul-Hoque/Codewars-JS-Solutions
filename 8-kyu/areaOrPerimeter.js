@@ -27,9 +27,13 @@ function areaOrPerimeterIf(l, w) {
     return 2 * (l + w);
 }
 
-
+// Approach 4: Using Math.pow
+function areaOrPerimeterMath(l, w) {
+    return l === w ? Math.pow(l, 2) : 2 * (l + w);
+}
 
 //  Test Outputs 
 console.log(areaOrPerimeterTernary(6, 10)); // 32
 console.log(areaOrPerimeterDiff(3, 3));     // 9
 console.log(areaOrPerimeterIf(5, 7));       // 24
+console.log(areaOrPerimeterMath(4, 4));     // 16
