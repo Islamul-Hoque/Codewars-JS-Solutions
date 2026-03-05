@@ -25,8 +25,16 @@ function multiplesOf3Or5Loop(number) {
     return sum;
 }
 
-
+// Approach 2: Array.from + reduce (functional style)
+const multiplesOf3Or5Array = n =>
+    n <= 0
+        ? 0
+        : Array.from({ length: n }, (_, i) =>
+            (i % 3 === 0 || i % 5 === 0) ? i : 0
+        ).reduce((x, y) => x + y);
 
 // Test Outputs
 console.log(multiplesOf3Or5Loop(10));   // 23
 console.log(multiplesOf3Or5Array(10));  // 23
+console.log(multiplesOf3Or5Loop(20));   // 78
+console.log(multiplesOf3Or5Array(-5));  // 0
