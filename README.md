@@ -342,3 +342,10 @@ Each problem is solved using multiple approaches to demonstrate different techni
   4. Using `Math.pow` for square area  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/areaOrPerimeter.js)
 
+### 31. Multiples of 3 or 5
+- **Difficulty:** 7 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/514b92a657cdc65150000006/javascript)
+- **Approaches:**  
+  1. Loop version (readable)  
+  2. Array.from + reduce (functional style)  
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/multiplesOf3Or5.js)
