@@ -26,8 +26,12 @@ function filterListNotString(l) {
     return l.filter(i => typeof i !== 'string');
 }
 
+// Approach 4: Unary plus trick
+const filterListUnary = l => l.filter(n => n === +n);
+
 
 // Test Outputs
 console.log(filterListTypeof([1, 2, 'a', 'b']));                      // [1,2]
 console.log(filterListInteger([1, 'a', 'b', 0, 15]));                 // [1,0,15]
 console.log(filterListNotString([1, 2, 'aasf', '1', '123', 123]));    // [1,2,123]
+console.log(filterListUnary([1, 2, 'a', 'b']));                       // [1,2]
