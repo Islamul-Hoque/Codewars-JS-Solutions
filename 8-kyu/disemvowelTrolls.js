@@ -25,8 +25,13 @@ function disemvowelFilter(str) {
     return str.split('').filter(ch => !vowels.includes(ch)).join('');
 }
 
+// Approach 4: Split by regex + join
+function disemvowelSplitRegex(str) {
+    return str.split(/[aeiou]/i).join('');
+}
 
 // Test Outputs
 console.log(disemvowelRegexArrow("This website is for losers LOL!")) // "Ths wbst s fr lsrs LL!"
 console.log(vowelCountRegexArrow("hello world"))    // 3
 console.log(disemvowelFilter("Javascript is fun")) // "Jvscrpt s fn"
+console.log(disemvowelSplitRegex("Disemvowel Trolls")) // "Dsmvwl Trlls"
