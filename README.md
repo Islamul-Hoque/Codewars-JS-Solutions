@@ -354,10 +354,16 @@ Each problem is solved using multiple approaches to demonstrate different techni
 - **Difficulty:** 7 kyu  
 - **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/javascript)
 - **Approaches:**  
-- **Approaches:**  
   1. Using `typeof item === "number"`  
   2. Using `Number.isInteger`  
   3. Using `typeof !== 'string'`  
   4. Using unary plus trick (`n === +n`)  
   5. Arrow + `Number.isInteger`  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/listFiltering.js)
+
+### 32. List Filtering
+- **Difficulty:** 7 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/52fba66badcd10859f00097e/javascript) 
+- **Approaches:**  
+  1. 
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/disemvowelTrolls.js)
