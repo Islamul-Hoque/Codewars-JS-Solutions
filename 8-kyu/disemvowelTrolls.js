@@ -19,8 +19,14 @@ const disemvowelRegexArrow = str => str.replace(/[aeiou]/gi, '');
 // Approach 2: Regex match count (arrow function for vowel count kata)
 const vowelCountRegexArrow = str => (str.match(/[aeiou]/g) || []).length;
 
+// Approach 3: Filter + includes
+function disemvowelFilter(str) {
+    const vowels = "aeiouAEIOU";
+    return str.split('').filter(ch => !vowels.includes(ch)).join('');
+}
 
 
 // Test Outputs
 console.log(disemvowelRegexArrow("This website is for losers LOL!")) // "Ths wbst s fr lsrs LL!"
 console.log(vowelCountRegexArrow("hello world"))    // 3
+console.log(disemvowelFilter("Javascript is fun")) // "Jvscrpt s fn"
