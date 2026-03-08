@@ -35,7 +35,20 @@ function likesSwitch(names) {
     }
 }
 
+// Approach 3: Object mapping
+function likesMap(names) {
+    return {
+        0: 'no one likes this',
+        1: `${names[0]} likes this`,
+        2: `${names[0]} and ${names[1]} like this`,
+        3: `${names[0]}, ${names[1]} and ${names[2]} like this`,
+        4: `${names[0]}, ${names[1]} and ${names.length - 2} others like this`,
+    }[Math.min(4, names.length)];
+}
+
+
 
 // Test Outputs
 console.log(likesTernary([]));                          // "no one likes this"
 console.log(likesSwitch(["Peter"]));                    // "Peter likes this"
+console.log(likesMap(["Jacob", "Alex"]));               // "Jacob and Alex like this"
