@@ -361,9 +361,33 @@ Each problem is solved using multiple approaches to demonstrate different techni
   5. Arrow + `Number.isInteger`  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/listFiltering.js)
 
-### 32. List Filtering
+### 33. Disemvowel Trolls
 - **Difficulty:** 7 kyu  
 - **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/52fba66badcd10859f00097e/javascript) 
 - **Approaches:**  
-  1. 
+  1. Regex replace (`str.replace(/[aeiou]/gi, '')`)  
+  2. Filter + includes  
+  3. Split by regex + join  
+  4. Arrow function concise version  
 - **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/disemvowelTrolls.js)
+
+### 34. Disemvowel Trolls
+- **Difficulty:** 7 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/52fba66badcd10859f00097e/javascript) 
+- **Approaches:**  
+  1. Regex replace (`str.replace(/[aeiou]/gi, '')`)  
+  2. Filter + includes  
+  3. Split by regex + join  
+  4. Arrow function concise version  
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/disemvowelTrolls.js)
+
+### 35. Who likes it?
+- **Difficulty:** 7 kyu  
+- **Problem Link:** [🌐 Codewars](https://www.codewars.com/kata/5266876b8f4bf2da9b000362/javascript) 
+- **Approaches:**  
+  1. Ternary operator chain  
+  2. Switch statement  
+  3. Object mapping  
+  4. Array destructuring  
+- **Solution:** [📂 View Code](https://github.com/Islamul-Hoque/Codewars-JS-Solutions/blob/main/8-kyu/whoLikesIt.js)
+
