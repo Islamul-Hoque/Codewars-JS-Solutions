@@ -46,9 +46,18 @@ function likesMap(names) {
     }[Math.min(4, names.length)];
 }
 
-
+// Approach 4: Array destructuring
+function likesDestructure([a, b, c, ...others]) {
+    if (!a) return "no one likes this";
+    if (!b) return `${a} likes this`;
+    if (!c) return `${a} and ${b} like this`;
+    if (!others.length) return `${a}, ${b} and ${c} like this`;
+    return `${a}, ${b} and ${others.length + 1} others like this`;
+}
 
 // Test Outputs
-console.log(likesTernary([]));                          // "no one likes this"
-console.log(likesSwitch(["Peter"]));                    // "Peter likes this"
-console.log(likesMap(["Jacob", "Alex"]));               // "Jacob and Alex like this"
+console.log(likesTernary(["Alex", "Jacob", "Mark", "Max"])) // "Alex, Jacob and 2 others like this"
+console.log(likesTernary([]))                               // "no one likes this"
+console.log(likesSwitch(["Peter"]))                         // "Peter likes this"
+console.log(likesMap(["Jacob", "Alex"]))                    // "Jacob and Alex like this"
+console.log(likesDestructure(["Max", "John", "Mark"]))      // "Max, John and Mark like this"
